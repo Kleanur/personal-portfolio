@@ -16,7 +16,7 @@
   }
 }
 
-body {
+/* body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -24,6 +24,29 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+} */
+
+section {
+    scroll-snap-align: center;
+}
+
+::-webkit-scrollbar {
+    height: 5px;
+    width: 6px;
+    background: rgb(var(--background-end-rgb));
+  }
+  
+::-webkit-scrollbar-thumb {
+    background: rgb(var(--foreground-rgb));
+    -webkit-border-radius: 1ex;
+}
+
+::-webkit-scrollbar-corner {
+    background: rgb(var(--background-start-rgb));
+}
+
+html {
+  scroll-snap-type: y mandatory;
 }
 
 @layer utilities {
