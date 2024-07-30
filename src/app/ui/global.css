@@ -26,10 +26,6 @@
     rgb(var(--background-start-rgb));
 } */
 
-section {
-    scroll-snap-align: center;
-}
-
 ::-webkit-scrollbar {
     height: 5px;
     width: 6px;
@@ -46,7 +42,7 @@ section {
 }
 
 html {
-  scroll-snap-type: y mandatory;
+  scroll-snap-type: y proximity;
 }
 
 @layer utilities {
