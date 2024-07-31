@@ -9,6 +9,7 @@ import {
   useTransform,
   MotionValue
 } from "framer-motion";
+import { dm_serif_display } from "./ui/fonts";
 
 function useParallax(value: MotionValue<number>, distance: number) {
   return useTransform(value, [0, 1], [-distance, distance]);
@@ -19,11 +20,13 @@ function PageSection({ id }: {id: number}) {
   const { scrollYProgress } = useScroll({ target: ref });
   const y = useParallax(scrollYProgress, 300);
   return (
-    <section className="flex h-[95vh] w-full flex-col justify-center items-center snap-center outline bg-slate-500 sticky">
-        <div className="my-auto" ref={ref}></div>
-        <motion.h1 className="text-5xl text-slate-300 text-center absolute" style={{ y }}>
-          {`Section ${id}`}
-        </motion.h1>
+    <section className="flex h-screen w-screen flex-col justify-center items-center snap-center">
+        <div className="flex h-5/6 w-4/6 flex-col justify-center items-center rounded-3xl shadow-2xl bg-slate-100">
+          <div className="my-auto" ref={ref}></div>
+          <motion.h1 className={`text-5xl text-center absolute ${dm_serif_display.className}`} style={{ y }}>
+            {`Section ${id}`}
+          </motion.h1>
+        </div>
       </section>
   )
 }
@@ -31,27 +34,20 @@ function PageSection({ id }: {id: number}) {
 export default function Home() {
   
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between ">
+    <main className="flex min-h-screen flex-col items-center">
+      <div className="fixed bottom-0 -z-10 w-full h-1/6">
+        <Image 
+          src="/tabletop-cropped-2.png"
+          alt=""
+          fill
+        />
+      </div>
+
       {
         [1, 2, 3].map((s) => (
           <PageSection key={s} id={s} />
-        ))}
-
-      <section className="flex h-[90vh] w-full flex-col items-center bg-slate-500">
-        <h1 className="my-auto text-5xl text-slate-300">
-          Section 1
-        </h1>
-      </section>
-      <section className="flex h-[90vh] w-full flex-col items-center bg-slate-400">
-        <h1 className="my-auto text-5xl text-slate-700">
-          Section 2
-        </h1>
-      </section>
-      <section className="flex h-[90vh] w-full flex-col items-center bg-slate-300">
-        <h1 className="my-auto text-5xl text-slate-600">
-          Section 3
-        </h1>
-      </section>
+        ))
+        }
 
       {/* <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
         <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">

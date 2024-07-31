@@ -2,47 +2,57 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@layer base {
+  :root {
+    --foreground-rgb: 40 25 82;
+    --background-start-rgb: 238 232 226;
+    --background-rgb: 250 244 238;
+    --accent-rgb: 255 213 79;
+    --highlight-rgb: 79 70 229;
+  }
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
-}
-
-/* body {
+} */
+/* 
+body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: rgb(var(--background-rgb));
+  margin: 0;
+  overflow-x: hidden;
 } */
 
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(275deg, rgb(var(--background-start-rgb)), rgb(var(--background-rgb)));
+  margin: 0;
+  overflow-x: hidden;
+}
+
+
+
 ::-webkit-scrollbar {
-    height: 5px;
+    height: 6px;
     width: 6px;
-    background: rgb(var(--background-end-rgb));
+    background: rgb(var(--background-rgb));
   }
   
 ::-webkit-scrollbar-thumb {
-    background: rgb(var(--foreground-rgb));
+    background: rgb(var(--accent-rgb));
     -webkit-border-radius: 1ex;
 }
 
 ::-webkit-scrollbar-corner {
-    background: rgb(var(--background-start-rgb));
+    background: rgb(var(--background-rgb));
 }
 
 html {
-  scroll-snap-type: y proximity;
+  scroll-snap-type: y mandatory;
 }
 
 @layer utilities {
