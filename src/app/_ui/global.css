@@ -43,7 +43,7 @@ body {
   }
   
 ::-webkit-scrollbar-thumb {
-    background: rgb(var(--accent-rgb));
+    background: rgb(var(--highlight-rgb));
     -webkit-border-radius: 1ex;
 }
 

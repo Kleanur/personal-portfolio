@@ -18,7 +18,7 @@ const config: Config = {
         "foreground-rgb": 'rgb(var(--foreground-rgb) / <alpha-value>)',
         "background-rgb": 'rgb(var(--background-rgb) / <alpha-value>)',
         "accent-rgb": 'rgb(var(--accent-rgb) / <alpha-value>)',
-        "accent2-rgb": 'rgb(var(--highlight-rgb) / <alpha-value>)',
+        "highlight-rgb": 'rgb(var(--highlight-rgb) / <alpha-value>)',
       },
     },
   },
