@@ -4,7 +4,6 @@ import { useRef } from "react";
 import {
   motion,
   useScroll,
-  useSpring,
 } from "framer-motion";
 import { popInVariants, useRotation } from "@/app/_lib/motion";
 
@@ -25,12 +24,14 @@ export default function SectionCard({
           style={{ rotate }}
         >
           <motion.div 
-            className="flex h-5/6 w-4/6 flex-col justify-center items-center rounded-3xl shadow-2xl bg-slate-100" 
+            className="flex h-5/6 w-4/6 flex-col justify-center items-center rounded-3xl shadow-2xl card-border p-2" 
             initial="hidden" 
             animate="visible" 
             variants={popInVariants}
           >
-            { children }
+            <div className="h-full w-full rounded-3xl bg-slate-100">
+              { children }
+            </div>
           </motion.div>
         </motion.section>
       </div>

@@ -1,5 +1,5 @@
 
-import { WhoSection } from "@/app/_components/home/HomeSections";
+import { IntroSection, WhoSection } from "@/app/_components/home/HomeSections";
 import ProgressIndicator from "./_components/ProgressIndicator";
 import TableBackground from "./_components/TableBackground";
 
@@ -13,6 +13,7 @@ export default function Home() {
         <ProgressIndicator/>
       </div> */}
       <div className="h-[5vh]"></div>
+      <IntroSection/>
       <WhoSection/>
       <WhoSection/>
       <WhoSection/>

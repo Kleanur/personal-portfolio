@@ -14,10 +14,10 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       colors: {
-        // Using modern `rgb`
         "foreground-rgb": 'rgb(var(--foreground-rgb) / <alpha-value>)',
         "background-rgb": 'rgb(var(--background-rgb) / <alpha-value>)',
         "accent-rgb": 'rgb(var(--accent-rgb) / <alpha-value>)',
+        "accent2-rgb": 'rgb(var(--accent2-rgb) / <alpha-value>)',
         "highlight-rgb": 'rgb(var(--highlight-rgb) / <alpha-value>)',
       },
     },

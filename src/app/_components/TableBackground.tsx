@@ -7,7 +7,7 @@ import { slideUpVariants } from "@/app/_lib/motion";
 export default function TableBackground() {
     return (
         <motion.div 
-        className="fixed bottom-0 -z-10 w-full h-1/6" 
+        className="fixed bottom-0 -z-10 w-full h-1/4" 
         initial="hidden"
         animate="visible"
         variants={slideUpVariants}
