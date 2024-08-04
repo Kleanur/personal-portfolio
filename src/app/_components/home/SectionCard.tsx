@@ -17,8 +17,7 @@ export default function SectionCard({
     const rotate = useRotation(scrollYProgress, 10);
 
     return (
-      <div className="flex h-[90vh] w-screen justify-center items-center">
-        <div className="absolute" ref={ref}></div>
+      <div className="relative flex h-[90vh] w-screen justify-center items-center">
         <motion.section 
           className="flex h-full w-full flex-col justify-center items-center snap-center absolute origin-bottom-left" 
           style={{ rotate }}
@@ -34,6 +33,7 @@ export default function SectionCard({
             </div>
           </motion.div>
         </motion.section>
+        <div className="absolute bottom-0" ref={ref}></div>
       </div>
     )
   }
