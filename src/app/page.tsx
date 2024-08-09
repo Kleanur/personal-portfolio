@@ -1,10 +1,9 @@
 
-import { IntroSection, WhoSection } from "@/app/_components/home/HomeSections";
+import { IntroSection, WhoSection, WIPSection } from "@/app/_components/home/HomeSections";
 import ProgressIndicator from "./_components/ProgressIndicator";
 import TableBackground from "./_components/TableBackground";
 
 export default function Home() {
-
   return (
     <main className="flex min-h-screen flex-col items-center">
       <TableBackground/>
@@ -14,9 +13,7 @@ export default function Home() {
       </div> */}
       <div className="h-[5vh]"></div>
       <IntroSection/>
-      <WhoSection/>
-      <WhoSection/>
-      <WhoSection/>
+      <WIPSection/>
       <div className="h-[5vh]"></div>
 
       {/* <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">

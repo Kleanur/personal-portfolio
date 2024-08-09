@@ -39,7 +39,7 @@ export const useParallax = (value: MotionValue<number>, distance: number) => {
 }
 
 export const useRotation = (value: MotionValue<number>, degrees: number) => {
-    return useTransform(value, [0, 0.8], [-degrees, 0]);
+    return useTransform(value, [0, 0.6], [-degrees, 0]);
 }
 
 
