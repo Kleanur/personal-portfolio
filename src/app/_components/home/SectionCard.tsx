@@ -28,7 +28,7 @@ export default function SectionCard({
           style={{ rotate }}
         >
           <motion.div 
-            className="flex lg:h-5/6 lg:w-4/6 h-[95%] w-[90%] flex-col justify-center items-center rounded-3xl shadow-2xl card-border p-2" 
+            className="flex xl:w-[1200px] lg:h-5/6 lg:w-[900px] h-[95%] w-[400px] flex-col justify-center items-center rounded-3xl shadow-2xl card-border p-2" 
             initial="hidden" 
             animate="visible" 
             variants={popInVariants}

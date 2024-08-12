@@ -5,6 +5,7 @@ import {
   motion,
   useScroll,
 } from "framer-motion";
+import { FaSquareGithub } from "react-icons/fa6";
 import { useParallax } from "@/app/_lib/motion";
 import SectionCard from "./SectionCard"
 import { dm_serif_display } from "@/app/_ui/fonts";
@@ -13,20 +14,25 @@ import Stamp from "../Stamp";
 export const IntroSection = () => {
     return (
         <SectionCard>
-            <div className="absolute lg:left-1/2 lg:top-[8%] lg:h-5/6 lg:w-0 lg:border-r-2 border-accent-rgb border-b-2 h-0 w-5/6 top-1/2"></div>
-            <div className="h-full w-full max-lg:flex max-lg:flex-col lg:grid lg:grid-cols-2 lg:grid-rows-5">
-                <div className="max-lg:basis-1/2 lg:col-span-1 lg:row-span-5 m-2 flex flex-col justify-center items-center">
+            <div className="absolute lg:left-1/2 lg:top-[8%] lg:h-5/6 lg:w-0 lg:border-r-2 border-accent-rgb border-b-2 h-0 w-[350px] top-2/3 left-[25px]"></div>
+            <div className="h-full w-full flex flex-col lg:flex-row">
+                <div className="basis-2/3 lg:basis-1/2 m-2 p-5 flex flex-col justify-center gap-5">
                     <h1 className={`text-4xl lg:text-5xl ${dm_serif_display.className}`}>
                         👋 Hi, I&apos;m <span className="underline decoration-accent-rgb decoration-8 text-nowrap">Kevin Li</span>
                     </h1>
+                    <p className="text-lg">
+                        I&apos;m a <b>Software Developer</b> who enjoys 
+                    </p>
                 </div>
-                <div className="lg:col-span-1 lg:row-span-3 lg:flex lg:flex-row-reverse m-2">
-                    <span className="lg:mr-16 lg:mt-4">
-                        <Stamp width={300} height={400} src={"/gradportrait-zoomed.jpg"} alt={""} />
-                    </span>
-                </div>
-                <div className="lg:col-span-1 lg:row-span-2 m-2">
+                <div className="flex flex-row-reverse lg:flex-col basis-1/3 lg:basis-1/2 m-2">
+                    <div className="m-2 flex flex-row-reverse">
+                        <span className="lg:mr-16 mr-4 mt-4">
+                            <Stamp src={"/gradportrait-zoomed.jpg"} alt={""} className={"w-[140px] h-[180px] lg:w-[320px] lg:h-[420px]"} />
+                        </span>
+                    </div>
+                    <div className="m-2">
 
+                    </div>
                 </div>
             </div>
         </SectionCard>
@@ -65,6 +71,9 @@ export const WIPSection = () => {
                     <br/>
                     Check out my source code on GitHub to see my activity and what I have planned:
                 </p>
+                <a className="w-[80px] h-[80px] hover:-rotate-6" href="https://github.com/Kleanur/personal-portfolio" target="_blank" rel="noopener noreferrer">
+                    <FaSquareGithub className="w-[80px] h-[80px] fill-highlight-rgb hover:w-[82px] hover:h-[82px] hover:fill-highlight2-rgb" />
+                </a>
             </div>
         </SectionCard>
     )
