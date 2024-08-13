@@ -8,13 +8,15 @@ The site is built with:
 - Next.js
 - TailwindCSS
 - Framer Motion
+- react-icons
 
 
 ## TODO List
 
 My next steps and ideas for the website:
-- Complete intro card with description and contact info
 - Add work experience card
-- (Add other content cards)
+- Add card for project features
+- Add card for hobby showcase
 - Dark mode
+- Add "table of contents" on side to scroll directly to relevant card
 - Make background lively, like the cards are on a wooden desk, dark mode toggle is a lamp switch
