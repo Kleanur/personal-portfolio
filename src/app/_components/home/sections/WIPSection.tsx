@@ -15,8 +15,8 @@ export default function WIPSection() {
                     <br/>
                     Check out my source code on GitHub to see my activity and what I have planned:
                 </p>
-                <a className="w-[80px] h-[80px] hover:-rotate-6" href="https://github.com/Kleanur/personal-portfolio" target="_blank" rel="noopener noreferrer">
-                    <FaSquareGithub className="w-[80px] h-[80px] fill-highlight-rgb hover:w-[82px] hover:h-[82px] hover:fill-highlight2-rgb" />
+                <a className="w-[80px] h-[80px] hover:-rotate-6 transform ease-out duration-300" href="https://github.com/Kleanur/personal-portfolio" target="_blank" rel="noopener noreferrer">
+                    <FaSquareGithub className="w-[80px] h-[80px] fill-highlight-rgb hover:w-[82px] hover:h-[82px] hover:fill-highlight2-rgb transform ease-out duration-300 origin-center" />
                 </a>
             </div>
         </SectionCard>
