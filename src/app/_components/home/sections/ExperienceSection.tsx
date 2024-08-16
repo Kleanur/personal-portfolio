@@ -10,7 +10,7 @@ export default function ExperienceSection() {
             <div className="flex flex-col lg:flex-row justify-center items-center w-full h-full">
                 <div className="flex flex-col justify-center h-full p-5 basis-1/2">
                     <h1 className={`text-5xl ${dm_serif_display.className}`}>
-                        I've done work with...
+                        I&apos;ve done work with...
                     </h1>
                     <ul className="text-lg" role="tablist">
                         <li>
