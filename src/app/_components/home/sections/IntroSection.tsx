@@ -40,7 +40,7 @@ export default function IntroSection() {
                 <div className="flex flex-row lg:flex-col basis-1/3 px-2">
                     <div className="m-2 flex flex-row-reverse">
                         <span className="lg:mx-auto lg:mt-16 mr-4 my-auto">
-                            <Stamp src={"/gradportrait-zoomed.jpg"} alt={""} className={"w-[140px] h-[180px] lg:w-[200] lg:h-[260] xl:w-[320px] xl:h-[420px]"} />
+                            <Stamp src={"/gradportrait-zoomed.jpg"} alt={""} className={"w-[140px] h-[180px] lg:w-[200] lg:h-[260] xl:w-[260px] xl:h-[340px]"} />
                         </span>
                     </div>
                     <ul className="lg:mx-auto lg:mt-8 my-auto">

@@ -13,7 +13,7 @@ export default function Home() {
       </div> */}
       <div className="h-[5vh]"></div>
       <IntroSection/>
-      <ExperienceSection/>
+      {/* <ExperienceSection/> */}
       <WIPSection/>
       <div className="h-[5vh]"></div>
 
