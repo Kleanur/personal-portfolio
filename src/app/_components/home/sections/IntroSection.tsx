@@ -7,7 +7,7 @@ import HandWave from "../HandWave";
 export default function IntroSection() {
     return (
         <SectionCard>
-            <div className="absolute lg:left-2/3 lg:top-[8%] lg:h-5/6 lg:w-0 lg:border-r-2 border-accent-rgb border-b-2 h-0 w-[350px] top-2/3 left-[25px]"></div>
+            <div className="absolute lg:left-2/3 lg:top-[8%] lg:h-5/6 lg:w-0 lg:border-r-2 border-b-2 h-0 w-[350px] top-2/3 left-[25px]"></div>
             <div className="h-full w-full flex flex-col lg:flex-row">
                 <div className="basis-2/3 p-4 xl:p-8 flex flex-col justify-center gap-5 text-sm sm:text-base lg:text-lg">
                     <h1 className={`text-4xl lg:text-5xl ${dm_serif_display.className}`}>
@@ -43,21 +43,21 @@ export default function IntroSection() {
                             <Stamp src={"/gradportrait-zoomed.jpg"} alt={""} className={"w-[140px] h-[180px] lg:w-[200] lg:h-[260] xl:w-[260px] xl:h-[340px]"} />
                         </span>
                     </div>
-                    <ul className="lg:mx-auto lg:mt-8 my-auto">
-                        <li>
-                            <FaRegEnvelope className="inline-block lg:size-5 size-4 mr-2 my-2"/>
+                    <ul className="lg:mx-auto lg:mt-8 my-auto xl:w-4/5">
+                        <li className="border-b-2 my-2 py-1">
+                            <FaRegEnvelope className="inline-block lg:size-5 size-4 mr-2"/>
                             <a className="underline lg:text-lg text-sm hover:no-underline" href="mailto:kevin.k348li@gmail.com" target="_blank" rel="noopener noreferrer">
                                 kevin.k348li@gmail.com
                             </a>
                         </li>
-                        <li>
-                            <FaPhone className="inline-block lg:size-5 size-4 mr-2 my-2"/>
+                        <li className="border-b-2 my-2 py-1">
+                            <FaPhone className="inline-block lg:size-5 size-4 mr-2"/>
                             <a className="underline lg:text-lg text-sm hover:no-underline" href="tel:kevin.k348li@gmail.com" target="_blank" rel="noopener noreferrer">
                                 +1 (647) 678-1395
                             </a>
                         </li>
-                        <li>
-                            <FaLinkedinIn className="inline-block lg:size-5 size-4 mr-2 my-2"/> 
+                        <li className="border-b-2 my-2 py-1">
+                            <FaLinkedinIn className="inline-block lg:size-5 size-4 mr-2"/> 
                             <a className="underline lg:text-lg text-sm hover:no-underline" href="https://www.linkedin.com/in/kevin-li-a376b61a0/" target="_blank" rel="noopener noreferrer">
                                 LinkedIn
                             </a>
