@@ -11,7 +11,7 @@ export default function WIPSection() {
                     This site is still under construction.
                 </h1>
                 <p className="text-lg text-center">
-                    The site is actively evolving as I work on it!
+                    The site is a brand new project and actively evolving as I work on it!
                     <br/>
                     Check out my source code on GitHub to see my activity and what I have planned:
                 </p>

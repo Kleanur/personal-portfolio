@@ -31,7 +31,7 @@ export default function IntroSection() {
                         </li>
                     </ul>
                     <p>
-                        I built this website using <b>Typescript</b>, <b>React</b>, and <b>Next.js</b> to teach myself about modern React development, and have a hub to showcase my future projects.
+                        I built this website using <b>Typescript</b>, <b>React</b>, and <b>Next.js</b> to teach myself about modern React development, and to have a hub to showcase my future projects.
                     </p>
                     <p>
                         I hope this site shows you a bit about what makes me tick!
