@@ -3,16 +3,16 @@
 @tailwind utilities;
 
 @layer base {
-  :root {
-    --foreground-rgb: 40 25 82;
-    --background-start-rgb: 238 232 226;
-    --background-rgb: 250 244 238;
-    --accent-rgb: 255 213 79;
-    --accent2-rgb: 225 146 36;
-    --highlight-rgb: 79 70 229;
-    --highlight2-rgb: 67 56 202;
-    --card-rgb: 241 245 249;
-  }
+	:root {
+		--foreground-rgb: 40 25 82;
+		--background-start-rgb: 238 232 226;
+		--background-rgb: 250 244 238;
+		--accent-rgb: 255 213 79;
+		--accent2-rgb: 225 146 36;
+		--highlight-rgb: 79 70 229;
+		--highlight2-rgb: 67 56 202;
+		--card-rgb: 241 245 249;
+	}
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -31,17 +31,17 @@ body {
 } */
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(275deg, rgb(var(--background-start-rgb)), rgb(var(--background-rgb)));
-  margin: 0;
-  overflow-x: hidden;
+	color: rgb(var(--foreground-rgb));
+  	background: linear-gradient(275deg, rgb(var(--background-start-rgb)), rgb(var(--background-rgb)));
+  	margin: 0;
+  	overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
     height: 6px;
     width: 6px;
     background: rgb(var(--background-rgb));
-  }
+}
   
 ::-webkit-scrollbar-thumb {
     background: rgb(var(--highlight-rgb));
@@ -53,21 +53,21 @@ body {
 }
 
 html {
-  scroll-snap-type: y mandatory;
+  	scroll-snap-type: y mandatory;
 }
 
 .card-border {
-  background-image: repeating-linear-gradient(
-    135deg,
-    rgb(var(--highlight-rgb)) 0px 15px,
-    rgb(var(--card-rgb)) 15px 30px,
-    rgb(var(--accent2-rgb)) 30px 45px,
-    rgb(var(--card-rgb)) 45px 60px
-  )
+  	background-image: repeating-linear-gradient(
+    	135deg,
+    	rgb(var(--highlight-rgb)) 0px 15px,
+    	rgb(var(--card-rgb)) 15px 30px,
+    	rgb(var(--accent2-rgb)) 30px 45px,
+    	rgb(var(--card-rgb)) 45px 60px
+  	)
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+  	.text-balance {
+    	text-wrap: balance;
+  	}
 }

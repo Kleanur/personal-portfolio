@@ -4,7 +4,7 @@ import "@/app/_ui/stamp.css"
 
 export default function Stamp({ src, alt, className }: Readonly<{ src: string, alt: string, className: string}>) {
     return (
-        <div className={`stamp p-[10px] bg-white rotate-3 ${className}`}>
+        <div className={`stamp p-[10px] bg-white ${className}`}>
             <Image 
                 src={src}
                 alt={alt}
