@@ -37,18 +37,18 @@ body {
   	overflow-x: hidden;
 }
 
-::-webkit-scrollbar {
+body::-webkit-scrollbar {
     height: 6px;
     width: 6px;
     background: rgb(var(--background-rgb));
 }
   
-::-webkit-scrollbar-thumb {
+body::-webkit-scrollbar-thumb {
     background: rgb(var(--highlight-rgb));
     -webkit-border-radius: 1ex;
 }
 
-::-webkit-scrollbar-corner {
+body::-webkit-scrollbar-corner {
     background: rgb(var(--background-rgb));
 }
 
