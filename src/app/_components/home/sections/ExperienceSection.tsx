@@ -16,14 +16,13 @@ export default function ExperienceSection() {
 	const [openTab, setOpenTab] = useState<string>("Orkin");
 	return (
 		<SectionCard>
-			<div className="flex flex-col w-full h-full p-2 lg:p-6">
-				<Header className="ml-2 mt-2">My Experience</Header>
-				<div className="flex flex-col lg:flex-row w-full px-2 py-4 flex-grow">
+			<div className="flex flex-col w-full h-full max-h-full p-2 lg:p-6">
+				<Header className="ml-2 my-2">My Experience</Header>
+				<div className="flex flex-col lg:flex-row flex-grow min-h-0">
 					<TabsList>
 						<Tab tabValue="Orkin" onClick={setOpenTab}>
 							<WorkExperienceItem 
 								src="/orkin-logo.png"
-								alt=""
 								width={276}
 								height={179}
 								title="Full-stack developer, freelance"
@@ -31,7 +30,31 @@ export default function ExperienceSection() {
 							/>
 						</Tab>
 						<Tab tabValue="Ford" onClick={setOpenTab}>
-							<div>Work</div>
+							<WorkExperienceItem 
+								src="/ford-logo.svg"
+								width={1000}
+								height={360}
+								title="Software Development Intern"
+								company="Ford Motor Company of Canada"
+							/>
+						</Tab>
+						<Tab tabValue="LoginID" onClick={setOpenTab}>
+							<WorkExperienceItem 
+								src="/login_ID_logo.png"
+								width={128}
+								height={128}
+								title="Front-End / QA Engineer"
+								company="LoginID"
+							/>
+						</Tab>
+						<Tab tabValue="Telus" onClick={setOpenTab}>
+							<WorkExperienceItem 
+								src="/telus-t-logo.svg"
+								width={128}
+								height={128}
+								title="Software Developer in Test"
+								company="Telus Health"
+							/>
 						</Tab>
 					</TabsList>
 					<div className="flex-grow w-full">
@@ -40,6 +63,12 @@ export default function ExperienceSection() {
 						</TabContent>
 						<TabContent tabValue="Ford" openTab={openTab}>
 							<div>Ford Content</div>
+						</TabContent>
+						<TabContent tabValue="LoginID" openTab={openTab}>
+							<div>LoginID Content</div>
+						</TabContent>
+						<TabContent tabValue="Telus" openTab={openTab}>
+							<div>Telus Content</div>
 						</TabContent>
 					</div>
 				</div>

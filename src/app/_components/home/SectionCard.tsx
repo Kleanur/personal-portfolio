@@ -34,7 +34,7 @@ export default function SectionCard({
 					variants={popInVariants}
 					style={{ y }}
 				>
-					<div className="h-full w-full rounded-3xl bg-slate-100">
+					<div className="relative h-full w-full rounded-3xl bg-slate-100">
 						{children}
 					</div>
 				</motion.div>
